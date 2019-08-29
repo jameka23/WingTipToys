@@ -1,4 +1,6 @@
-﻿using System;
+﻿/*The context class manages the entity classes and provides data access to the database*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
