@@ -1,11 +1,13 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="wingtipToysCsharp._Default" %>
+﻿<%@ Page Title="Welcome" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="wingtipToysCsharp._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <h1><%: Title %></h1>
+        <h2>Wingtip Toys can help you find the perfect gift.</h2>
+        <p class="lead">We're all about transportation toys. You can order 
+                any of our toys today. Each toy listing has detailed 
+                information to help you choose the right toy.</p>
     </div>
 
     <div class="row">
