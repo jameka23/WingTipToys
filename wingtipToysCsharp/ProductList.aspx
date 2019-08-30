@@ -9,7 +9,7 @@
 
             <asp:ListView ID="productList" runat="server" 
                 DataKeyNames="ProductID" GroupItemCount="4"
-                ItemType="wingtipToysCsharp.Models.Product" SelectMethod="GetProducts">
+                ItemType="wingtipToysCsharp.Models.Product" SelectMethod="GetProducts">  <%--this is how you use model binding using SelectMethod of page's code--%>
                 <EmptyDataTemplate>
                     <table >
                         <tr>
