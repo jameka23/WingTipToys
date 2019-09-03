@@ -16,10 +16,17 @@ namespace wingtipToysCsharp
 
         }
 
+        // this function will get the categoryId and return back a query that holds all the products
+        // with that categoryId
+
         public IQueryable<Product> GetProducts([QueryString("id")] int? categoryId)
         {
-            var _db = new wingtipToysCsharp.Models.ProductContext();
-            IQueryable<Product> query = _db.Products;
+            var _db = new wingtipToysCsharp.Models.ProductContext();  // call the db for the products 
+            IQueryable<Product> query = _db.Products;       // declare a list type of the products 
+
+
+            // if the category from the query string has a value and more than 0, 
+            // set the value of the query to be all the products with the categoryId
             if (categoryId.HasValue && categoryId > 0)
             {
                 query = query.Where(p => p.CategoryID == categoryId);
